@@ -4,7 +4,7 @@
 
 <img src="https://github.com/rose-del/Flappy-Bird/assets/119326136/833167ad-cabd-44ff-9a7d-765cc5dfb7c6" alt="Flappy Bird">
 
-
+<div align="justify">
 ## Descrição do Projeto:
 
 Este projeto é uma versão do famoso jogo "Flappy Bird", desenvolvido como um exercício prático para aprimorar a manipulação do DOM (Document Object Model) durante a disciplina de Desenvolvimento de Aplicações Web I, do meu curso técnico em Informática no IFPB. O objetivo principal era aplicar e consolidar os conceitos de manipulação do DOM usando JavaScript de forma prática e divertida.
@@ -23,3 +23,4 @@ Este projeto é uma versão do famoso jogo "Flappy Bird", desenvolvido como um e
 
 ---
 Este é um projeto simples, mas espero que ele possa ser útil para ajudar você a entender e utilizar o DOM!
+</div>
