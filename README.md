@@ -1,6 +1,9 @@
-**Flappy Bird Clone - Projeto de Desenvolvimento Web I**
+# Flappy Bird Clone - Projeto de Desenvolvimento Web I
 
 ---
+
+<img src="https://github.com/rose-del/Flappy-Bird/assets/119326136/833167ad-cabd-44ff-9a7d-765cc5dfb7c6" alt="Flappy Bird">
+
 
 ## Descrição do Projeto:
 
