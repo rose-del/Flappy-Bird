@@ -5,6 +5,7 @@ function novoElemento(tagName, className){
     elem.className = className
     return elem
 }
+
 /*Essa função nos definimos como nossa barreira vai funcionar
 em relação ao comportamento da sua altura, borda e corpo*/
 function Barreira(reversa = false){
@@ -15,10 +16,7 @@ function Barreira(reversa = false){
     this.elemento.appendChild(reversa ? corpo : borda)
     this.elemento.appendChild(reversa ? borda : corpo)
 
-
     this.setAltura =altura => corpo.style.height = `${altura}px`
-
-
 }
 
 /*Aqui podemos incluir o par de duas barreiras e setamos
@@ -29,7 +27,6 @@ function ParDeBarreiras(altura, abertura, x){
 
     this.superior = new Barreira(true)
     this.inferior = new Barreira(false)
-
 
     this.elemento.appendChild(this.superior.elemento)
     this.elemento.appendChild(this.inferior.elemento)
@@ -49,10 +46,6 @@ function ParDeBarreiras(altura, abertura, x){
     this.sortearAbertura()
     this.setX(x)
 }
-
-/*const b = new ParDeBarreiras(700, 200,400)
-document.querySelector('[wm-flappy]').appendChild(b.elemento)*/
-
 
 /*Essa função ela faz com que aproveitamos as barreiras que são criadas
 na função anterior e fazer com que elas fiquem deslocando 
@@ -84,16 +77,6 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto){
             })
         }    
 }
-/*Nesta parte comentada podemos realizar um teste no navegador se a função de fato
-esta funcionando corretamenta*/
-
-/*const barreiras = new Barreiras(700, 1100, 200, 400)
-const areaDoJogo = document.querySelector('[wm-flappy]')
-barreiras.pares.forEach(par=> areaDoJogo.appendChild(par.elemento))
-setInterval(()=>{
-    barreiras.animar()
-},20)*/
-
 
 /*Está função estamos atribuido o passaro a nossa tela e passando todas as funcionalidade
 que existem para que a logica dele funcione, assim como a sua variação de posição */
@@ -124,19 +107,6 @@ function Passaro(alturaJogo){
 
     this.setY(alturaJogo / 2)
 }
-
-/*Nesta seção podemos testar tanto quanto as barreiras modificando sua posição, quanto 
-movimento do passaro em ralação ao eixo Y*/
-
-/*const barreiras = new Barreiras(700, 1200, 200, 400)
-const passaro = new Passaro(700)
-const areaDoJogo = document.querySelector('[wm-flappy]')
-areaDoJogo.appendChild(passaro.elemento)
-barreiras.pares.forEach(par=> areaDoJogo.appendChild(par.elemento))
-setInterval(()=>{
-    barreiras.animar()
-    passaro.animar()
-},20)*/
 
  
 function Progresso(){
